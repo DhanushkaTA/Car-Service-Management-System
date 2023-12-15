@@ -1,0 +1,6 @@
+package lk.ijse.the_car_guys.service;
+
+public enum ServiceTypes {
+    USER,CUSTOMER,VEHICLE,WAITING_LIST,ORDER,ORDER_DETAIL,SPARE_PART,REPAIR,PAYMENT_ORDER,
+    PAYMENT_REPAIR,LOGIN_DETAILS,SERVICE
+}

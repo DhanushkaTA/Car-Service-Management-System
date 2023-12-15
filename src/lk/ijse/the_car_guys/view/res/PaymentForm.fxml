@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="604.0" prefWidth="938.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.res.PaymentFormController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="26.0" prefWidth="938.0" style="-fx-background-color: #EBEBEB;">
+         <children>
+            <JFXButton fx:id="btnClose" alignment="CENTER" layoutX="902.0" onAction="#btnCloseOnAction" prefHeight="18.0" prefWidth="35.0" styleClass="button_close" stylesheets="@../../asset/css/Button.css" text="X" textAlignment="CENTER" textFill="#a6a6a6">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="22.0" layoutY="5.0" text="Payment Window">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="382.0" layoutY="23.0" text="Payment Application" textFill="#726f6f">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="55.0" text="Payment Details" textFill="#726f6f">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="133.0" layoutY="65.0" prefHeight="3.0" prefWidth="804.0" />
+      <Separator layoutY="65.0" prefHeight="3.0" prefWidth="28.0" />
+      <Label layoutX="28.0" layoutY="88.0" text="Payment ID">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="145.0" text="Payment Type">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="89.0" text="Payment Date">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="662.0" layoutY="89.0" text="Payment Time">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPaymentID" editable="false" layoutX="136.0" layoutY="83.0" prefHeight="30.0" prefWidth="139.0" promptText="Payment ID" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDate" editable="false" layoutX="454.0" layoutY="83.0" prefHeight="30.0" prefWidth="131.0" promptText="Payment Date" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTime" editable="false" layoutX="770.0" layoutY="83.0" prefHeight="30.0" prefWidth="131.0" promptText="Payment Time" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="30.0" layoutY="181.0" text="Client Details" textFill="#726f6f">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="114.0" layoutY="191.0" prefHeight="3.0" prefWidth="823.0" />
+      <Separator layoutY="191.0" prefHeight="3.0" prefWidth="28.0" />
+      <TextField fx:id="txtClientID" editable="false" layoutX="50.0" layoutY="232.0" prefWidth="215.0" promptText="Client ID" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="52.0" layoutY="209.0" text="Client ID">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtClientName" editable="false" layoutX="371.0" layoutY="232.0" prefWidth="215.0" promptText="Client Name" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="373.0" layoutY="209.0" text="Client Name">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtClientNIC" editable="false" layoutX="680.0" layoutY="232.0" prefWidth="215.0" promptText="Client NIC" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="682.0" layoutY="209.0" text="Client NIC">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutY="372.0" prefHeight="3.0" prefWidth="938.0" />
+      <Pane layoutX="361.0" layoutY="382.0" prefHeight="217.0" prefWidth="244.0" styleClass="pane" stylesheets="@../../asset/css/Pane.css">
+         <children>
+            <TextField fx:id="txtAmount" layoutX="20.0" layoutY="45.0" onKeyReleased="#txtAmountOnAction" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: #FFFF9D; -fx-background-radius: 5px; -fx-border-color: #FCB414; -fx-border-radius: 5px;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="25.0" layoutY="20.0" text="Payment Amount" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBalance" editable="false" layoutX="20.0" layoutY="116.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: #FFFF9D; -fx-background-radius: 5px; -fx-border-color: #FCB414; -fx-border-radius: 5px;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="25.0" layoutY="91.0" text="Balance" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnMakePayment" buttonType="RAISED" layoutX="762.0" layoutY="450.0" onAction="#btnMakePaymentOnAction" styleClass="button_save" stylesheets="@../../asset/css/Button.css" text="Make Payment">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="764.0" layoutY="501.0" onAction="#btnCancelOnAction" prefHeight="34.0" prefWidth="137.0" styleClass="button_cancel" stylesheets="@../../asset/css/Button.css" text="Cancel">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="32.0" layoutY="382.0" prefHeight="217.0" prefWidth="244.0" styleClass="pane_4" stylesheets="@../../asset/css/Pane.css">
+         <children>
+            <Label layoutX="33.0" layoutY="58.0" text="TOTAL PAYMENT" textFill="RED">
+               <font>
+                  <Font name="Calibri Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="lblPayment" layoutX="42.0" layoutY="102.0" prefHeight="31.0" prefWidth="168.0" textFill="RED">
+               <font>
+                  <Font name="Calibri Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="353.0" layoutY="145.0" text="Order ID">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="662.0" layoutY="145.0" text="Repair ID">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOrderID" editable="false" layoutX="454.0" layoutY="139.0" prefHeight="30.0" prefWidth="131.0" promptText="Order ID" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtRepairID" editable="false" layoutX="770.0" layoutY="139.0" prefHeight="30.0" prefWidth="131.0" promptText="Repair ID" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="30.0" layoutY="279.0" text="Vehicle Details" textFill="#726f6f">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="126.0" layoutY="289.0" prefHeight="3.0" prefWidth="811.0" />
+      <Separator layoutY="289.0" prefHeight="3.0" prefWidth="28.0" />
+      <TextField fx:id="txtVehicleID" editable="false" layoutX="51.0" layoutY="325.0" prefWidth="215.0" promptText="Client ID" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="53.0" layoutY="302.0" text="Vehicle ID">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleNumber" editable="false" layoutX="372.0" layoutY="325.0" prefWidth="215.0" promptText="Client Name" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="374.0" layoutY="302.0" text="Vehicle Number">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbPaymentType" layoutX="136.0" layoutY="140.0" prefHeight="30.0" prefWidth="139.0" />
+   </children>
+</AnchorPane>

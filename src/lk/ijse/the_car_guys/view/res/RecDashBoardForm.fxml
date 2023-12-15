@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" minHeight="-Infinity" prefHeight="712.0" prefWidth="1418.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.res.RecDashBoardFormController">
+   <children>
+      <AnchorPane prefHeight="712.0" prefWidth="203.0" style="-fx-background-color: #272C39;">
+         <children>
+            <JFXButton fx:id="btnDashboard" layoutX="4.0" layoutY="176.0" onAction="#btnDashboardOnAction" prefHeight="51.0" prefWidth="198.0" stylesheets="@../../asset/css/Style.css" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="WINDOWS" layoutX="52.0" layoutY="205.0" size="13" />
+            <JFXButton fx:id="btnClients" layoutX="4.0" layoutY="228.0" onAction="#btnClientsOnAction" prefHeight="51.0" prefWidth="198.0" stylesheets="@../../asset/css/Style.css" text="Clients" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="53.0" layoutY="256.0" size="13" />
+            <JFXButton fx:id="btnOrder" layoutX="4.0" layoutY="279.0" onAction="#btnOrderOnAction" prefHeight="51.0" prefWidth="198.0" stylesheets="@../../asset/css/Style.css" text="Order" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnRepair" layoutX="4.0" layoutY="332.0" onAction="#btnRepairOnAction" prefHeight="51.0" prefWidth="198.0" stylesheets="@../../asset/css/Style.css" text="Repair" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnLogout" layoutY="653.0" onAction="#btnLogoutOnAction" prefHeight="51.0" prefWidth="203.0" styleClass="button_back" stylesheets="@../../asset/css/Style.css" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnWaitingList" layoutX="4.0" layoutY="384.0" onAction="#btnWaitingListOnAction" prefHeight="51.0" prefWidth="198.0" stylesheets="@../../asset/css/Style.css" text="Waiting List" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnSpareParts" layoutX="4.0" layoutY="434.0" onAction="#btnSparePartsOnAction" prefHeight="51.0" prefWidth="198.0" stylesheets="@../../asset/css/Style.css" text="Spare Parts" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnServices" layoutX="4.0" layoutY="486.0" onAction="#btnServicesOnAction" prefHeight="51.0" prefWidth="198.0" stylesheets="@../../asset/css/Style.css" text="Services" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnPayment" layoutX="4.0" layoutY="590.0" onAction="#btnPaymentONAction" prefHeight="51.0" prefWidth="198.0" stylesheets="@../../asset/css/Style.css" text="Payment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="CLOCK_ALT" layoutX="51.0" layoutY="413.0" size="12" />
+            <FontAwesomeIconView fill="WHITE" glyphName="CART_ARROW_DOWN" layoutX="52.0" layoutY="308.0" size="14" />
+            <FontAwesomeIconView fill="WHITE" glyphName="WRENCH" layoutX="56.0" layoutY="361.0" size="13" />
+            <FontAwesomeIconView fill="WHITE" glyphName="DOLLAR" layoutX="54.0" layoutY="620.0" size="13" />
+            <ImageView fitHeight="130.0" fitWidth="191.0" layoutX="3.0" layoutY="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../asset/image/r.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIconView fill="WHITE" glyphName="CERTIFICATE" layoutX="53.0" layoutY="516.0" />
+            <FontAwesomeIconView fill="WHITE" glyphName="PRODUCT_HUNT" layoutX="52.0" layoutY="464.0" />
+            <JFXButton fx:id="btnVehicle" layoutX="4.0" layoutY="537.0" onAction="#btnVehicleOnAction" prefHeight="51.0" prefWidth="198.0" stylesheets="@../../asset/css/Style.css" text="Vehicle" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" layoutX="48.0" layoutY="683.0" size="14" />
+            <FontAwesomeIconView fill="WHITE" glyphName="GAVEL" layoutX="52.0" layoutY="361.0" size="13" />
+            <FontAwesomeIconView fill="WHITE" glyphName="CAR" layoutX="53.0" layoutY="566.0" size="12" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="203.0" prefHeight="74.0" prefWidth="1215.0" style="-fx-background-color: #ffff;" styleClass="tool-bar" stylesheets="@../../asset/css/Style.css">
+         <children>
+            <Label fx:id="lblTimeH" layoutX="89.0" layoutY="20.0" prefHeight="34.0" prefWidth="235.0" text="22" textFill="#272c39">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="53.0" layoutX="1078.0" layoutY="15.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../asset/icon/icons8-userDTO-100.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="835.0" layoutY="22.0" text="User : " textFill="#272c39">
+               <font>
+                  <Font name="Agency FB Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtUserName" layoutX="890.0" layoutY="23.0" prefHeight="23.0" prefWidth="184.0" text="User : " textFill="#242936">
+               <font>
+                  <Font name="Agency FB Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTimeH1" layoutX="9.0" layoutY="20.0" prefHeight="34.0" prefWidth="78.0" text="Time :" textFill="#272c39">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="337.0" layoutY="20.0" prefHeight="34.0" prefWidth="235.0" text="22" textFill="#272c39">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTimeH11" layoutX="257.0" layoutY="20.0" prefHeight="34.0" prefWidth="78.0" text="Date :" textFill="#272c39">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="place" layoutX="203.0" layoutY="75.0" prefHeight="638.0" prefWidth="1215.0" />
+      <AnchorPane fx:id="place_2" layoutX="203.0" layoutY="76.0" prefHeight="638.0" prefWidth="1215.0">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="37.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asset/icon/icons8-dashboard-layout-96.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="64.0" layoutY="16.0" text="Dashboard" textFill="#242936">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <HBox layoutX="64.0" layoutY="58.0" prefHeight="100.0" prefWidth="1003.0" spacing="40.0">
+               <children>
+                  <Pane prefHeight="116.0" prefWidth="219.0" style="-fx-background-color: #ffff; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                     <children>
+                        <Label layoutX="21.0" layoutY="20.0" text="Waiting List" textFill="#325eee">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="175.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../asset/icon/waiting_list.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblWaitingList" alignment="TOP_RIGHT" layoutX="13.0" layoutY="59.0" prefHeight="39.0" prefWidth="97.0" text="100/">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="113.0" layoutY="68.0" prefHeight="30.0" prefWidth="46.0" text="Today">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="219.0" style="-fx-background-color: #242936; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                     <children>
+                        <Label layoutX="21.0" layoutY="20.0" text="Repaired" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="175.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../asset/icon/Repaired.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblDone" alignment="TOP_RIGHT" layoutX="13.0" layoutY="59.0" prefHeight="39.0" prefWidth="97.0" text="100/" textFill="#ffe144">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="113.0" layoutY="68.0" prefHeight="30.0" prefWidth="46.0" text="Today" textFill="#ffe144">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="219.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="20.0" text="Orders" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="175.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../asset/icon/Orders.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblOrderCount" alignment="TOP_RIGHT" layoutX="13.0" layoutY="59.0" prefHeight="39.0" prefWidth="97.0" text="100/" textFill="#ffe144">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="113.0" layoutY="68.0" prefHeight="30.0" prefWidth="46.0" text="Today" textFill="#ffe144">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="colored-card" />
+                        <String fx:value="colored-card_ho" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <stylesheets>
+                        <URL value="@../../asset/css/Style.css" />
+                        <URL value="@../../asset/css/Dash.css" />
+                     </stylesheets>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="219.0" style="-fx-background-color: #ffff; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                     <children>
+                        <Label layoutX="21.0" layoutY="20.0" text="Repairing" textFill="#16b95a">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="175.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../asset/icon/icons8-support-100.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblRepairing" alignment="TOP_RIGHT" layoutX="13.0" layoutY="59.0" prefHeight="39.0" prefWidth="97.0" text="100/">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="113.0" layoutY="68.0" prefHeight="30.0" prefWidth="46.0" text="Today">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <Pane layoutX="41.0" layoutY="178.0" prefHeight="444.0" prefWidth="362.0" style="-fx-background-color: #fff; -fx-border-color: #FFF; -fx-background-insets: 0; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-color: #6D7179;">
+               <children>
+                  <Label layoutX="127.0" layoutY="3.0" prefHeight="27.0" prefWidth="146.0" text="Find Item Details">
+                     <font>
+                        <Font name="Agency FB Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutY="29.0" prefHeight="4.0" prefWidth="362.0" />
+                  <TextField fx:id="txtSearch" layoutX="44.0" layoutY="66.0" onAction="#txtSearchOnAction" prefHeight="25.0" prefWidth="198.0" promptText="S-xxxxxxx" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="22.0" layoutY="105.0" text="Tip : Enter Id or description to find spaer parts." textFill="#050779" />
+                  <JFXRadioButton layoutX="14.0" layoutY="39.0" selected="true" text="Item ID">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="itemSearch" />
+                     </toggleGroup></JFXRadioButton>
+                  <JFXRadioButton fx:id="rBtnItemDescription" layoutX="113.0" layoutY="39.0" text="Item Description" toggleGroup="$itemSearch" />
+                  <Label layoutX="14.0" layoutY="137.0" text="Item ID" />
+                  <Label layoutX="14.0" layoutY="193.0" text="Item Description" />
+                  <Label layoutX="14.0" layoutY="297.0" text="Item QytOn Hand" />
+                  <Label layoutX="12.0" layoutY="348.0" text="Item Price" />
+                  <JFXButton fx:id="btnItemSearch" buttonType="RAISED" layoutX="247.0" layoutY="69.0" onAction="#btnItemSearchOnAction" prefHeight="27.0" prefWidth="66.0" stylesheets="@../../asset/css/Dash.css" text="Search" textFill="#f8f8f8">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="button_Search" />
+                        <String fx:value="button_Search_ho" />
+                     </styleClass>
+                  </JFXButton>
+                  <VBox layoutX="116.0" layoutY="130.0" prefHeight="255.0" prefWidth="235.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="txtId" editable="false" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" style="-fx-background-color: #FFFF9D; -fx-border-color: #FADD16;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtDescription" editable="false" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: #FFFF9D; -fx-border-color: #FADD16;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtType" editable="false" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: #FFFF9D; -fx-border-color: #FADD16;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtQtyOnHand" editable="false" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: #FFFF9D; -fx-border-color: #FADD16;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtPrice" editable="false" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: #FFFF9D; -fx-border-color: #FADD16;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </VBox>
+                  <JFXButton fx:id="btnItemClear" buttonType="RAISED" layoutX="234.0" layoutY="403.0" onAction="#btnItemClearOnAction" prefHeight="25.0" prefWidth="78.0" stylesheets="@../../asset/css/Dash.css" text="Clear">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="button_Search" />
+                        <String fx:value="button_Search_ho" />
+                     </styleClass>
+                  </JFXButton>
+                  <Label layoutX="14.0" layoutY="246.0" text="Item Type" />
+                  <Label fx:id="lblItemAdvanceSearch" contentDisplay="RIGHT" layoutX="33.0" layoutY="408.0" onMouseClicked="#lblItemAdvanceSearchOnAction" prefHeight="17.0" prefWidth="146.0" text=" Use Advance Search" textFill="#081ae1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#081ae1" glyphName="ARROW_RIGHT" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <FontAwesomeIconView fill="#050779" glyphName="INFO_CIRCLE" layoutX="8.0" layoutY="118.0" />
+                  <Label fx:id="lblItemAdvice" contentDisplay="RIGHT" layoutX="76.0" layoutY="384.0" onMouseClicked="#lblServiceAdvanceSearchOnAction" prefHeight="17.0" prefWidth="191.0" textFill="#ff1028">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="760.0" layoutY="178.0" prefHeight="444.0" prefWidth="362.0" style="-fx-background-color: #fff; -fx-border-color: #6D7179; -fx-background-insets: 0; -fx-background-radius: 20px; -fx-border-radius: 20px;">
+               <children>
+                  <Label layoutX="21.0" layoutY="101.0" text="Tip : Enter Id or description to find Service." textFill="#050779" />
+                  <Label layoutX="114.0" layoutY="3.0" prefHeight="27.0" prefWidth="160.0" text="Find Service Details">
+                     <font>
+                        <Font name="Agency FB Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="1.0" layoutY="29.0" prefHeight="4.0" prefWidth="362.0" />
+                  <TextField fx:id="txtS_Search" layoutX="44.0" layoutY="64.0" onAction="#txtS_SearchOnAction" prefHeight="25.0" prefWidth="198.0" promptText="Ser-xxxxx" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <JFXRadioButton layoutX="14.0" layoutY="38.0" selected="true" text="Service ID">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="serviceSearch" />
+                     </toggleGroup></JFXRadioButton>
+                  <JFXRadioButton fx:id="rBtnServiceDescription" layoutX="127.0" layoutY="38.0" text="Service Description" toggleGroup="$serviceSearch" />
+                  <JFXButton fx:id="btnServiceSearch" buttonType="RAISED" layoutX="247.0" layoutY="67.0" onAction="#btnServiceSearchOnAction" prefHeight="27.0" prefWidth="66.0" stylesheets="@../../asset/css/Dash.css" text="Search" textFill="#f8f8f8">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="button_Search" />
+                        <String fx:value="button_Search_ho" />
+                     </styleClass>
+                  </JFXButton>
+                  <Label layoutX="14.0" layoutY="139.0" text="Service Id" />
+                  <Label layoutX="19.0" layoutY="275.0" text="Service" />
+                  <Label layoutX="14.0" layoutY="289.0" text="Description" />
+                  <Label layoutX="14.0" layoutY="195.0" text="Service Price" />
+                  <JFXButton fx:id="btnServiceClear" buttonType="RAISED" layoutX="243.0" layoutY="399.0" onAction="#btnSearviceClearOnAction" prefHeight="25.0" prefWidth="78.0" stylesheets="@../../asset/css/Dash.css" text="Clear">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="button_Search" />
+                        <String fx:value="button_Search_ho" />
+                     </styleClass>
+                  </JFXButton>
+                  <Label fx:id="lblServiceAdvanceSearch" contentDisplay="RIGHT" layoutX="35.0" layoutY="404.0" onMouseClicked="#lblServiceAdvanceSearchOnAction" prefHeight="17.0" prefWidth="146.0" text=" Use Advance Search" textFill="#081ae1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#081ae1" glyphName="ARROW_RIGHT" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <FontAwesomeIconView fill="#050779" glyphName="INFO_CIRCLE" layoutX="7.0" layoutY="114.0" />
+                  <Label fx:id="lblServiceAdvice" contentDisplay="RIGHT" layoutX="107.0" layoutY="363.0" onMouseClicked="#lblServiceAdvanceSearchOnAction" prefHeight="17.0" prefWidth="191.0" textFill="#ff1028">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </Pane>
+            <VBox layoutX="873.0" layoutY="308.0" prefHeight="232.0" prefWidth="235.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="txtS_Id" editable="false" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" style="-fx-background-color: #FFFF9D; -fx-border-color: #FADD16;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtS_Price" editable="false" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: #FFFF9D; -fx-border-color: #FADD16;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextArea fx:id="txtS_Description" editable="false" prefHeight="107.0" prefWidth="235.0" style="-fx-background-color: #FFFF9D; -fx-border-color: #FADD16;" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+            <JFXButton fx:id="btnAddWL" buttonType="RAISED" layoutX="423.0" layoutY="542.0" onAction="#btnAddWLOnAction" prefHeight="51.0" prefWidth="315.0" stylesheets="@../../asset/css/Dash.css" text="Add To Waiting List" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="colored-card" />
+                  <String fx:value="button_atw" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../asset/icon/icons8-add-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAddCustomer" buttonType="RAISED" layoutX="423.0" layoutY="206.0" onAction="#btnAddCustomerOnAction" prefHeight="51.0" prefWidth="315.0" styleClass="pane_7" stylesheets="@../../asset/css/Pane.css" text="Add Client" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../asset/icon/icons8-add-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="addNewVehicle" buttonType="RAISED" layoutX="423.0" layoutY="264.0" onAction="#addNewVehicleOnAction" prefHeight="51.0" prefWidth="315.0" styleClass="pane_6" stylesheets="@../../asset/css/Pane.css" text="Add Vehicle" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../asset/icon/icons8-add-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Pane layoutX="426.0" layoutY="325.0" prefHeight="203.0" prefWidth="315.0" style="-fx-background-color: #ffff; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+               <children>
+                  <Label layoutX="13.0" layoutY="4.0" text="INCOME">
+                     <font>
+                        <Font name="Calibri Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblOrder" alignment="TOP_RIGHT" layoutX="14.0" layoutY="150.0" prefHeight="39.0" prefWidth="138.0" text="00.0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="251.0" layoutY="1.0" prefHeight="30.0" prefWidth="46.0" text="Today">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRepair" alignment="TOP_RIGHT" layoutX="174.0" layoutY="150.0" prefHeight="39.0" prefWidth="138.0" text="00.0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutY="121.0" prefHeight="4.0" prefWidth="315.0" />
+                  <Label layoutX="13.0" layoutY="128.0" text="Orders">
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="184.0" layoutY="128.0" text="Repairs">
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Label fx:id="lblTodayTotal" alignment="CENTER" layoutX="478.0" layoutY="365.0" prefHeight="72.0" prefWidth="241.0" text="100000000" textFill="#407b7b">
+               <font>
+                  <Font name="Calibri Bold" size="45.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCount211" alignment="CENTER" layoutX="441.0" layoutY="365.0" prefHeight="72.0" prefWidth="48.0" text="Rs" textFill="#407b7b">
+               <font>
+                  <Font name="Calibri Bold" size="45.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="670.0" prefWidth="1094.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.LoginFormController">
+   <children>
+      <AnchorPane layoutX="894.0" minWidth="-Infinity" prefHeight="679.0" prefWidth="313.0" style="-fx-background-color: #272C39;">
+         <children>
+            <Label layoutX="35.0" layoutY="223.0" prefHeight="17.0" prefWidth="256.0" text="Welcome Back! Please enter your logindata to " textFill="WHITE" />
+            <Label layoutX="35.0" layoutY="240.0" prefHeight="17.0" prefWidth="256.0" text="continue." textFill="WHITE" />
+            <TextField fx:id="txtUsername" layoutX="35.0" layoutY="301.0" prefHeight="40.0" prefWidth="247.0" promptText="Username" style="-fx-border-color: #FFFFFF; -fx-background-color: #434A62; -fx-background-radius: 5px; -fx-border-radius: 5px;" styleClass="text-input" stylesheets="@../asset/css/Style.css">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="39.0" layoutY="273.0" prefHeight="17.0" prefWidth="86.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPasswordVisible" layoutX="35.0" layoutY="375.0" onKeyReleased="#txtPasswordVisibleOnAction" prefHeight="40.0" prefWidth="247.0" promptText="Password" style="-fx-border-color: #FFFFFF; -fx-background-color: #434A62; -fx-background-radius: 5px; -fx-border-radius: 5px;" styleClass="text-input" stylesheets="@../asset/css/Style.css">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPassword" layoutX="35.0" layoutY="375.0" onKeyReleased="#txtPasswordOnAction" prefHeight="40.0" prefWidth="247.0" promptText="Password" style="-fx-background-color: #434A62; -fx-border-color: #FFFFFF; -fx-background-radius: 5px; -fx-border-radius: 5px;" styleClass="text-input" stylesheets="@../asset/css/Style.css">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="39.0" layoutY="350.0" prefHeight="17.0" prefWidth="86.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="450.0" prefHeight="17.0" prefWidth="109.0" text="Forgot Password ?" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnLogin" layoutX="207.0" layoutY="443.0" onAction="#btnLoginOnAction" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: #FFE144;" text="LOGIN">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="373.0" fitWidth="382.0" layoutX="-28.0" layoutY="-41.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/image/Untitled-1.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnVisible" contentDisplay="GRAPHIC_ONLY" layoutX="254.0" layoutY="415.0" onAction="#btnVisibleOnAction" prefHeight="25.0" prefWidth="24.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#ffe144" glyphName="EYE" wrappingWidth="14.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnSetHidden" contentDisplay="GRAPHIC_ONLY" layoutX="254.0" layoutY="415.0" onAction="#btnSetHiddenOnAction" prefHeight="24.0" prefWidth="18.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#ffe144" glyphName="EYE_SLASH">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="679.0" fitWidth="894.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/image/cb488b120391105.60b08efd3219a.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

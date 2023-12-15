@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="531.0" prefWidth="1123.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.res.VehicleUpdateFormController">
+   <children>
+      <Label layoutX="350.0" layoutY="52.0" prefHeight="17.0" prefWidth="449.0" text="Enter Vehicle Number here what you wan to find And Finally enter                            ." textFill="#272c39" />
+      <FontAwesomeIconView fill="#272c39" glyphName="INFO_CIRCLE" layoutX="337.0" layoutY="65.0" />
+      <TextField fx:id="txtSearch" layoutX="142.0" layoutY="14.0" onAction="#txtSearchOnAction" prefHeight="33.0" prefWidth="841.0" promptText="Enter Vehicle Number...." style="-fx-background-color: #FFFF9D; -fx-border-color: #FCB414;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="700.0" layoutY="52.0" prefHeight="17.0" prefWidth="97.0" text=" ENTER BUTTON " textFill="#fa0202" />
+      <Pane layoutX="45.0" layoutY="88.0" prefHeight="137.0" prefWidth="1008.0" style="-fx-background-color: white; -fx-background-radius: 8px; -fx-border-color: #AAAAAA; -fx-border-radius: 8px;">
+         <children>
+            <Label layoutX="42.0" layoutY="4.0" text="Client Details">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="1.0" layoutY="13.0" prefHeight="3.0" prefWidth="38.0" />
+            <Separator layoutX="126.0" layoutY="13.0" prefHeight="3.0" prefWidth="881.0" />
+            <Label layoutX="42.0" layoutY="30.0" text="ID">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="250.0" layoutY="30.0" text="Full Name">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="504.0" layoutY="30.0" text="NIC Number">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="752.0" layoutY="30.0" text="Telephone Number">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="83.0" text="E-mail Address">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="504.0" layoutY="83.0" text=" Address">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAddress" layoutX="507.0" layoutY="104.0" prefHeight="18.0" prefWidth="491.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmail" layoutX="42.0" layoutY="104.0" prefHeight="18.0" prefWidth="430.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblID" layoutX="42.0" layoutY="49.0" prefHeight="18.0" prefWidth="186.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFullName" layoutX="250.0" layoutY="49.0" prefHeight="18.0" prefWidth="239.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNIC" layoutX="504.0" layoutY="49.0" prefHeight="18.0" prefWidth="239.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTelephone" layoutX="752.0" layoutY="49.0" prefHeight="18.0" prefWidth="239.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="32.0" layoutY="248.0" prefHeight="266.0" prefWidth="1008.0" style="-fx-background-color: white; -fx-background-radius: 8px; -fx-border-color: #AAAAAA; -fx-border-radius: 8px;">
+         <children>
+            <Label layoutX="41.0" layoutY="4.0" text="Vehicle Details">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="1.0" layoutY="13.0" prefHeight="3.0" prefWidth="38.0" />
+            <Separator layoutX="133.0" layoutY="13.0" prefHeight="3.0" prefWidth="874.0" />
+            <Label layoutX="42.0" layoutY="30.0" text="ID">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="295.0" layoutY="30.0" text="Vehicle Number">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="560.0" layoutY="30.0" text="Engine Type">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="807.0" layoutY="30.0" text="Vehicle Color">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="136.0" text="Vehicle Type">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="294.0" layoutY="136.0" text="Vehicle Reg.Date">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textVehicleID" editable="false" layoutX="39.0" layoutY="62.0" prefHeight="30.0" prefWidth="150.0" promptText="Vehicle ID" style="-fx-background-color: #F3F4F9; -fx-border-color: #B9B9B9; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtVehicleNumber" layoutX="293.0" layoutY="62.0" onKeyReleased="#txtVehicleNumberOnAction" prefHeight="30.0" prefWidth="150.0" promptText="Vehicle Number" style="-fx-background-color: #F3F4F9; -fx-border-color: #B9B9B9; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtVehicleType" layoutX="39.0" layoutY="167.0" prefHeight="30.0" prefWidth="170.0" promptText="Vehicle Type" style="-fx-background-color: #F3F4F9; -fx-border-color: #B9B9B9; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtVehicleColor" layoutX="805.0" layoutY="62.0" prefHeight="30.0" prefWidth="139.0" promptText="Vehicle Color" style="-fx-background-color: #F3F4F9; -fx-border-color: #B9B9B9; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtRegDate" layoutX="293.0" layoutY="167.0" prefHeight="30.0" prefWidth="170.0" promptText="Vehicle Reg Date" style="-fx-background-color: #F3F4F9; -fx-border-color: #B9B9B9; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cmbVehicleEngineType" layoutX="551.0" layoutY="61.0" prefHeight="30.0" prefWidth="150.0" />
+            <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="735.0" layoutY="167.0" onAction="#btnUpdateOnAction" styleClass="button_save" stylesheets="@../../asset/css/Button.css" text="Update">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="834.0" layoutY="167.0" onAction="#btnCancelOnAction" styleClass="button_cancel" stylesheets="@../../asset/css/Button.css" text="Cancel">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="638.0" prefWidth="1215.0" style="-fx-background-color: #EFEFEF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.res.DashboardFormController">
+   <children>
+      <Pane layoutX="92.0" layoutY="85.0" prefHeight="116.0" prefWidth="219.0" style="-fx-background-color: #ffff; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label layoutX="21.0" layoutY="20.0" text="Waiting List" textFill="#325eee">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="175.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asset/icon/waiting_list.png" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_RIGHT" layoutX="13.0" layoutY="59.0" prefHeight="39.0" prefWidth="97.0" text="100/">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="68.0" prefHeight="30.0" prefWidth="46.0" text="Today">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="354.0" layoutY="85.0" prefHeight="116.0" prefWidth="219.0" style="-fx-background-color: #242936; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label layoutX="21.0" layoutY="20.0" text="Repaired" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="175.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asset/icon/Repaired.png" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_RIGHT" layoutX="13.0" layoutY="59.0" prefHeight="39.0" prefWidth="97.0" text="100/" textFill="#ffe144">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="68.0" prefHeight="30.0" prefWidth="46.0" text="Today" textFill="#ffe144">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="622.0" layoutY="85.0" prefHeight="116.0" prefWidth="219.0" style="-fx-background-color: #ffff; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label layoutX="21.0" layoutY="20.0" text="Orders" textFill="#f22323">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="175.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asset/icon/Orders.png" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_RIGHT" layoutX="13.0" layoutY="59.0" prefHeight="39.0" prefWidth="97.0" text="100/">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="68.0" prefHeight="30.0" prefWidth="46.0" text="Today">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="888.0" layoutY="85.0" prefHeight="116.0" prefWidth="219.0" style="-fx-background-color: #ffff; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label layoutX="21.0" layoutY="20.0" text="Repaired" textFill="#16b95a">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="175.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asset/icon/icons8-support-100.png" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_RIGHT" layoutX="13.0" layoutY="59.0" prefHeight="39.0" prefWidth="97.0" text="100/">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="68.0" prefHeight="30.0" prefWidth="46.0" text="Today">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="39.0" fitWidth="37.0" layoutX="25.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asset/icon/icons8-dashboard-layout-96.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="66.0" layoutY="14.0" text="Dashboard" textFill="#242936">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Separator layoutX="30.0" layoutY="54.0" prefHeight="1.0" prefWidth="284.0" />
+   </children>
+</AnchorPane>

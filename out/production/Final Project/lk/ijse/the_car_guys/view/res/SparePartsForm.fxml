@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="638.0" prefWidth="1215.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.res.SparePartsFormController">
+   <children>
+      <ImageView fitHeight="39.0" fitWidth="37.0" layoutX="25.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asset/icon/Spare%20parts%201.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="66.0" layoutY="10.0" text="Spare Parts" textFill="#242936">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Pane layoutX="14.0" layoutY="66.0" prefHeight="154.0" prefWidth="1088.0" styleClass="pane" stylesheets="@../../asset/css/Pane.css">
+         <children>
+            <Label layoutX="457.0" layoutY="7.0" text="Search Spare Parts" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="25.0" />
+               </font>
+            </Label>
+            <Separator layoutX="65.0" layoutY="46.0" prefHeight="5.0" prefWidth="937.0" />
+            <TextField fx:id="textSearch" layoutX="158.0" layoutY="79.0" prefHeight="33.0" prefWidth="797.0" promptText="Enter Keyworde....." style="-fx-background-color: #FFFF9D; -fx-border-color: #FCB414;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="487.0" layoutY="112.0" text="Enter here what you want to find." textFill="WHITE" />
+            <FontAwesomeIconView fill="WHITE" glyphName="INFO_CIRCLE" layoutX="472.0" layoutY="125.0" />
+         </children></Pane>
+      <TableView fx:id="tblSpareParts" layoutX="32.0" layoutY="253.0" prefHeight="329.0" prefWidth="1030.0" stylesheets="@../../asset/css/Table.css">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="123.0" text="Spare Part ID" />
+          <TableColumn fx:id="colDescription" prefWidth="449.99998474121094" text="Description" />
+            <TableColumn fx:id="colType" prefWidth="160.0" text="Type" />
+            <TableColumn fx:id="colPrice" prefWidth="162.0" text="Price" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="134.0" text="Qty.OnHand" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="5.0" fitWidth="12.0" layoutX="1192.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

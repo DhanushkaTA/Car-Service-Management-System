@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="631.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.admin.CustomerFormController">
+   <children>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="29.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asset/icon/icons8-people-96.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="72.0" layoutY="11.0" text="Clients" textFill="#242936">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Pane layoutX="4.0" layoutY="62.0" prefHeight="553.0" prefWidth="1175.0" style="-fx-background-color: white; -fx-border-color: #AAAAAA; -fx-background-radius: 8px; -fx-border-radius: 8px;">
+         <children>
+            <Separator layoutX="1.0" layoutY="40.0" prefHeight="3.0" prefWidth="1175.0" />
+            <AnchorPane fx:id="place" layoutX="2.0" layoutY="42.0" prefHeight="523.0" prefWidth="1159.0" />
+            <AnchorPane fx:id="context_2" layoutX="5.0" layoutY="42.0" prefHeight="523.0" prefWidth="1159.0">
+               <children>
+                  <TextField fx:id="txtSearch" layoutX="327.0" layoutY="11.0" prefHeight="33.0" prefWidth="517.0" promptText="Enter Keyworde....." style="-fx-background-color: #FFFF9D; -fx-border-color: #FCB414;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TableView fx:id="tblCustomer" layoutX="12.0" layoutY="66.0" prefHeight="424.0" prefWidth="1142.0" stylesheets="@../../asset/css/Table.css">
+                     <columns>
+                        <TableColumn fx:id="colId" prefWidth="89.0" text="Customer Id" />
+                        <TableColumn fx:id="colName" prefWidth="155.0" text="Name" />
+                        <TableColumn fx:id="colNic" prefWidth="115.0" text="NIC" />
+                        <TableColumn fx:id="colTelephone" prefWidth="158.0" text="Telephone Number" />
+                        <TableColumn fx:id="colAddress" prefWidth="234.0" text="Address" />
+                        <TableColumn fx:id="colEmail" prefWidth="202.0" text="Email" />
+                        <TableColumn fx:id="colRegDate" prefWidth="99.0" text="Reg.Date" />
+                        <TableColumn fx:id="colAction" prefWidth="99.0" text="Action" />
+                     </columns>
+                  </TableView>
+               </children></AnchorPane>
+         </children>
+      </Pane>
+      <Pane layoutX="32.0" layoutY="63.0" prefHeight="39.0" prefWidth="1128.0" style="-fx-background-color: white; -fx-background-radius: 8px; -fx-border-radius: 8px;">
+         <children>
+            <HBox layoutX="39.0" layoutY="1.0" prefHeight="38.0" prefWidth="462.0">
+               <children>
+                  <JFXButton fx:id="btnAll" onAction="#btnAllOnAction" prefHeight="38.0" prefWidth="79.0" stylesheets="@../../asset/css/Hbox.css" text="All">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnAdd" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="79.0" stylesheets="@../../asset/css/Hbox.css" text="Add">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnUpdate" onAction="#btnUpdateOnAction" prefHeight="38.0" prefWidth="101.0" stylesheets="@../../asset/css/Hbox.css" text="Update">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

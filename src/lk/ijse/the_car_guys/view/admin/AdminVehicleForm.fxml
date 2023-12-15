@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="631.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.admin.AdminVehicleFormController">
+   <children>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="44.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asset/gif/car.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="87.0" layoutY="1.0" text="Vehicles" textFill="#242936">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Pane layoutX="9.0" layoutY="48.0" prefHeight="573.0" prefWidth="1175.0" style="-fx-background-color: white; -fx-border-color: #AAAAAA; -fx-background-radius: 8px; -fx-border-radius: 8px;">
+         <children>
+            <Separator layoutX="1.0" layoutY="40.0" prefHeight="3.0" prefWidth="1175.0" />
+            <AnchorPane fx:id="place" layoutX="2.0" layoutY="42.0" prefHeight="530.0" prefWidth="1159.0" />
+            <AnchorPane fx:id="context_2" layoutX="5.0" layoutY="42.0" prefHeight="530.0" prefWidth="1159.0">
+               <children>
+                  <TableView fx:id="tblVehicle" layoutX="25.0" layoutY="62.0" prefHeight="311.0" prefWidth="1096.0" stylesheets="@../../asset/css/Table.css">
+                     <columns>
+                        <TableColumn fx:id="colVehicleID" prefWidth="134.0" text="Vehicle Id" />
+                        <TableColumn fx:id="colVehicleNumber" prefWidth="130.0" text="Vehicle Number" />
+                        <TableColumn fx:id="colEngineType" prefWidth="108.0" text="Engine Type" />
+                        <TableColumn fx:id="colCustomerId" prefWidth="155.0" text="Customer Id" />
+                        <TableColumn fx:id="colVehicleColor" prefWidth="116.0" text="Vehicle Color" />
+                        <TableColumn fx:id="colVehicleType" prefWidth="132.0" text="Vehicle Type" />
+                        <TableColumn fx:id="colRegDate" prefWidth="125.0" text="Reg.Date" />
+                        <TableColumn fx:id="colDelete" prefWidth="99.0" text="Delete" />
+                        <TableColumn fx:id="colView" prefWidth="96.0" text="View" />
+                     </columns>
+                  </TableView>
+                  <Pane layoutX="75.0" layoutY="381.0" prefHeight="137.0" prefWidth="1008.0" style="-fx-background-color: white; -fx-background-radius: 8px; -fx-border-color: #AAAAAA; -fx-border-radius: 8px;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Label layoutX="42.0" layoutY="4.0" text="Client Details">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="1.0" layoutY="13.0" prefHeight="3.0" prefWidth="38.0" />
+                        <Separator layoutX="126.0" layoutY="13.0" prefHeight="3.0" prefWidth="881.0" />
+                        <Label layoutX="42.0" layoutY="30.0" text="ID">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="250.0" layoutY="30.0" text="Full Name">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="504.0" layoutY="30.0" text="NIC Number">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="752.0" layoutY="30.0" text="Telephone Number">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="83.0" text="E-mail Address">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="504.0" layoutY="83.0" text=" Address">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblAddress" layoutX="507.0" layoutY="104.0" prefHeight="18.0" prefWidth="491.0">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblEmail" layoutX="42.0" layoutY="106.0" prefHeight="18.0" prefWidth="430.0">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblID" layoutX="42.0" layoutY="47.0" prefHeight="18.0" prefWidth="186.0">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblFullName" layoutX="250.0" layoutY="47.0" prefHeight="18.0" prefWidth="239.0">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblNIC" layoutX="504.0" layoutY="49.0" prefHeight="18.0" prefWidth="239.0">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTelephone" layoutX="752.0" layoutY="47.0" prefHeight="18.0" prefWidth="239.0">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <TextField fx:id="txtSearch" layoutX="314.0" layoutY="6.0" prefHeight="33.0" prefWidth="559.0" promptText="Enter Keyword....." style="-fx-background-color: #FFFF9D; -fx-border-color: #FCB414;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="544.0" layoutY="40.0" prefWidth="204.0" text="Enter here what you want to find." textFill="#2f376b" />
+                  <FontAwesomeIconView fill="#2f376b" glyphName="INFO_CIRCLE" layoutX="529.0" layoutY="53.0" text="" />
+                  <JFXButton fx:id="btnAddNew" buttonType="RAISED" layoutX="906.0" layoutY="11.0" onAction="#btnAddNewOnAction" styleClass="button_save" stylesheets="@../../asset/css/Button.css" text="Add New Vehicle">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <Pane layoutX="18.0" layoutY="1.0" prefHeight="39.0" prefWidth="1128.0" style="-fx-background-color: white; -fx-background-radius: 8px; -fx-border-radius: 8px;">
+               <children>
+                  <HBox layoutX="39.0" layoutY="1.0" prefHeight="38.0" prefWidth="462.0">
+                     <children>
+                        <JFXButton fx:id="btnAll" onAction="#btnAllOnAction" prefHeight="38.0" prefWidth="79.0" stylesheets="@../../asset/css/Hbox.css" text="All">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="btnUpdate" onAction="#btnUpdateOnAction" prefHeight="38.0" prefWidth="101.0" stylesheets="@../../asset/css/Hbox.css" text="Update">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

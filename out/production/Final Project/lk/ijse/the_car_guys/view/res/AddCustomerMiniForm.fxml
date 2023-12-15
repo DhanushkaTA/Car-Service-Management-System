@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="642.0" prefWidth="534.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.res.AddCustomerMiniFormController">
+   <children>
+      <JFXButton fx:id="btnClose" layoutX="499.0" onAction="#btnCloseOnAction" styleClass="button_close" stylesheets="@../../asset/css/Button.css" text="X" textFill="#a6a6a6">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="165.0" layoutY="40.0" text="Add Client Application" textFill="#726f6f">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-2.0" layoutY="67.0" prefHeight="3.0" prefWidth="534.0" />
+      <TextField fx:id="txtID" editable="false" layoutX="29.0" layoutY="119.0" prefWidth="215.0" promptText="Client ID" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="31.0" layoutY="96.0" text="Client ID">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLastName" layoutX="278.0" layoutY="214.0" prefWidth="215.0" promptText="LastName" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtFirstName" layoutX="29.0" layoutY="214.0" prefWidth="215.0" promptText="First Name" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNIC" layoutX="29.0" layoutY="288.0" onKeyReleased="#txtNICOnAction" prefWidth="215.0" promptText="NIC Number" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="29.0" layoutY="365.0" prefHeight="30.0" prefWidth="464.0" promptText="Address" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTelephone" layoutX="279.0" layoutY="287.0" prefWidth="215.0" promptText="0xxxxxxxxx" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtRegDate" editable="false" layoutX="30.0" layoutY="520.0" prefWidth="215.0" promptText="Register Date" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="31.0" layoutY="193.0" text="First Name">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="193.0" text="Last Name">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="267.0" text="NIC Number">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="267.0" text="Telephone Number">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="343.0" text="Address">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="498.0" text="Registor Date">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="29.0" layoutY="441.0" prefHeight="30.0" prefWidth="464.0" promptText="Email Address" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="31.0" layoutY="419.0" text="Email Address">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="165.0" text="Personal Details" textFill="#726f6f">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="132.0" layoutY="175.0" prefHeight="3.0" prefWidth="401.0" />
+      <Separator layoutY="175.0" prefHeight="3.0" prefWidth="28.0" />
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="399.0" layoutY="582.0" onAction="#btnSaveOnAction" styleClass="button_save" stylesheets="@../../asset/css/Button.css" text="Save">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="SAVE" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

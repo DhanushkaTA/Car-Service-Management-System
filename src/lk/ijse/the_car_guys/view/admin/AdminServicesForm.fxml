@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="637.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.admin.AdminServicesFormController">
+   <children>
+      <ImageView fitHeight="47.0" fitWidth="45.0" layoutX="33.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asset/icon/Services.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="79.0" layoutY="7.0" text="Services" textFill="#242936">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Pane layoutX="18.0" layoutY="60.0" prefHeight="573.0" prefWidth="1175.0" style="-fx-background-color: white; -fx-border-color: #AAAAAA; -fx-background-radius: 8px; -fx-border-radius: 8px;">
+         <children>
+            <Separator layoutX="1.0" layoutY="40.0" prefHeight="3.0" prefWidth="1175.0" />
+            <AnchorPane fx:id="place" layoutX="2.0" layoutY="42.0" prefHeight="530.0" prefWidth="1159.0" />
+            <AnchorPane fx:id="context_2" layoutX="5.0" layoutY="42.0" prefHeight="530.0" prefWidth="1159.0">
+               <children>
+                  <Pane layoutX="10.0" layoutY="18.0" prefHeight="485.0" prefWidth="348.0" style="-fx-background-color: white; -fx-background-radius: 8px; -fx-border-color: #AAAAAA; -fx-border-radius: 8px;">
+                     <children>
+                        <Label layoutX="55.0" layoutY="145.0" text="Price">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="10.0" text="Add Services Application">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtServicesID" editable="false" layoutX="53.0" layoutY="95.0" prefHeight="30.0" prefWidth="237.0" promptText="Type" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="55.0" layoutY="73.0" text="Services ID">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtPrice" layoutX="53.0" layoutY="167.0" prefHeight="30.0" prefWidth="237.0" promptText="SparePart ID" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </TextField>
+                        <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="136.0" layoutY="423.0" onAction="#btnSaveOnAction" prefHeight="38.0" prefWidth="76.0" styleClass="button_save" stylesheets="@../../asset/css/Button.css" text="Save">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="245.0" layoutY="423.0" onAction="#btnClearOnAction" prefHeight="38.0" prefWidth="76.0" styleClass="button_cancel" stylesheets="@../../asset/css/Button.css" text="Clear">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <Separator layoutY="35.0" prefHeight="3.0" prefWidth="348.0" />
+                        <TextArea fx:id="txtAreaDescription" layoutX="55.0" layoutY="243.0" prefHeight="165.0" prefWidth="237.0" />
+                        <Label layoutX="55.0" layoutY="218.0" text="Description">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="656.0" layoutY="16.0" prefHeight="485.0" prefWidth="478.0" style="-fx-background-color: white; -fx-background-radius: 8px; -fx-border-color: #AAAAAA; -fx-border-radius: 8px;">
+                     <children>
+                        <Label layoutX="55.0" layoutY="145.0" text="Price">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="83.0" layoutY="9.0" text="Update Service Application">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtPriceUpdate" layoutX="53.0" layoutY="166.0" prefHeight="30.0" prefWidth="237.0" promptText="Price" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="55.0" layoutY="73.0" text="Service ID">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtServicesIDSearchUpdate" layoutX="53.0" layoutY="94.0" onAction="#txtServicesIDSearchUpdateOnAction" prefHeight="30.0" prefWidth="237.0" promptText="SparePart ID" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </TextField>
+                        <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="136.0" layoutY="423.0" onAction="#btnUpdateOnAction" prefHeight="38.0" prefWidth="76.0" styleClass="button_save" stylesheets="@../../asset/css/Button.css" text="Update">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="btnClearUpdate" buttonType="RAISED" layoutX="245.0" layoutY="423.0" onAction="#btnClearUpdateOnAction" prefHeight="38.0" prefWidth="76.0" styleClass="button_cancel" stylesheets="@../../asset/css/Button.css" text="Clear">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <Separator layoutY="35.0" prefHeight="3.0" prefWidth="478.0" />
+                        <TextArea fx:id="txtAreaDescriptionUpdate" layoutX="55.0" layoutY="243.0" prefHeight="165.0" prefWidth="237.0" />
+                        <Label layoutX="55.0" layoutY="218.0" text="Description">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="82.0" layoutY="46.0" prefHeight="17.0" prefWidth="196.0" text="Enter Service id here to find serviceDTO." textFill="#34395e" />
+                        <FontAwesomeIconView fill="#34395e" glyphName="INFO_CIRCLE" layoutX="66.0" layoutY="59.0" />
+                        <ComboBox fx:id="cmbServiceIDs" layoutX="308.0" layoutY="94.0" onAction="#cmbServiceIDsOnAction" prefHeight="30.0" prefWidth="150.0" styleClass="combo-box-base" stylesheets="@../../asset/css/Combo.css" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="416.0" layoutY="54.0" prefHeight="165.0" prefWidth="182.0" style="-fx-background-color: #FFE335; -fx-background-radius: 8px; -fx-border-color: #FFE335; -fx-border-radius: 8px;">
+                     <children>
+                        <Label layoutX="17.0" layoutY="18.0" text="Total Services" textFill="#314168">
+                           <font>
+                              <Font name="Calibri Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCount" alignment="CENTER" layoutX="21.0" layoutY="79.0" prefHeight="72.0" prefWidth="140.0" text="00" textFill="#314168">
+                           <font>
+                              <Font name="Calibri Bold" size="62.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <Pane layoutX="18.0" layoutY="1.0" prefHeight="39.0" prefWidth="1128.0" style="-fx-background-color: white; -fx-background-radius: 8px; -fx-border-radius: 8px;">
+               <children>
+                  <HBox layoutX="39.0" layoutY="1.0" prefHeight="38.0" prefWidth="462.0">
+                     <children>
+                        <JFXButton fx:id="btnAdd" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="79.0" stylesheets="@../../asset/css/Hbox.css" text="Add">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="btnAll" onAction="#btnAllOnAction" prefHeight="38.0" prefWidth="79.0" stylesheets="@../../asset/css/Hbox.css" text="All">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

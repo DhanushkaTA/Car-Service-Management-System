@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="696.0" prefWidth="1408.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.admin.AdminDashBoardFormController">
+   <children>
+      <AnchorPane minWidth="-Infinity" prefHeight="711.0" prefWidth="202.0" style="-fx-background-color: #272C39;">
+         <children>
+            <JFXButton fx:id="btnDashboard" layoutY="183.0" onAction="#btnDashboarOnAction" prefHeight="49.0" prefWidth="202.0" stylesheets="@../../asset/css/Style.css" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnReports" layoutY="577.0" onAction="#btnReportsOnAction" prefHeight="49.0" prefWidth="202.0" stylesheets="@../../asset/css/Style.css" text="Reports" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnClients" layoutY="232.0" onAction="#btnClientsOnAction" prefHeight="49.0" prefWidth="202.0" stylesheets="@../../asset/css/Style.css" text="Clients" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnEmployees" layoutY="280.0" onAction="#btnEmployeesOnAction" prefHeight="49.0" prefWidth="202.0" stylesheets="@../../asset/css/Style.css" text="Users" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnLoginDitails" layoutX="1.0" layoutY="528.0" onAction="#btnLoginDitailsOnAction" prefHeight="49.0" prefWidth="202.0" stylesheets="@../../asset/css/Style.css" text="Login Ditails" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="WINDOWS" layoutX="48.0" layoutY="210.0" size="13" />
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="49.0" layoutY="259.0" size="13" />
+            <FontAwesomeIconView fill="WHITE" glyphName="STEAM" layoutX="48.0" layoutY="309.0" size="13" />
+            <FontAwesomeIconView fill="WHITE" glyphName="LINE_CHART" layoutX="49.0" layoutY="605.0" size="12" />
+            <FontAwesomeIconView fill="WHITE" glyphName="CLIPBOARD" layoutX="49.0" layoutY="557.0" size="13" />
+            <JFXButton fx:id="btnLogOut" layoutY="660.0" onAction="#btnLogOutOnAction" prefHeight="49.0" prefWidth="202.0" styleClass="button_back" stylesheets="@../../asset/css/Style.css" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" layoutX="64.0" layoutY="690.0" size="14" />
+            <ImageView fitHeight="184.0" fitWidth="202.0" layoutX="1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../asset/image/Untitled-1.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnSpareParts" layoutY="329.0" onAction="#btnSparePartsOnAction" prefHeight="49.0" prefWidth="202.0" stylesheets="@../../asset/css/Style.css" text="Spare Parts" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnServices" layoutY="379.0" onAction="#btnServicesOnAction" prefHeight="49.0" prefWidth="202.0" stylesheets="@../../asset/css/Style.css" text="Services" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnVehicles" layoutY="429.0" onAction="#btnVehiclesOnAction" prefHeight="49.0" prefWidth="202.0" stylesheets="@../../asset/css/Style.css" text="Vehicles" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnPayment" layoutY="478.0" onAction="#btnPaymentOnAction" prefHeight="49.0" prefWidth="202.0" stylesheets="@../../asset/css/Style.css" text="Payment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="DOLLAR" layoutX="51.0" layoutY="507.0" size="13" />
+            <FontAwesomeIconView fill="WHITE" glyphName="CERTIFICATE" layoutX="47.0" layoutY="408.0" />
+            <FontAwesomeIconView fill="WHITE" glyphName="PRODUCT_HUNT" layoutX="46.0" layoutY="358.0" />
+            <FontAwesomeIconView fill="WHITE" glyphName="CAR" layoutX="47.0" layoutY="458.0" size="12" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="202.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="74.0" prefWidth="1206.0" styleClass="tool-bar" stylesheets="@../../asset/css/Style.css">
+         <children>
+            <Label fx:id="tblTime" layoutX="80.0" layoutY="14.0" prefHeight="34.0" prefWidth="225.0" text="TIME :" textFill="#272c39">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="64.0" fitWidth="60.0" layoutX="1043.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asset/icon/icons8-customerDTO-100%20(1).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblDate" layoutX="399.0" layoutY="14.0" prefHeight="34.0" prefWidth="225.0" text="TIME :" textFill="#272c39">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="333.0" layoutY="14.0" prefHeight="34.0" prefWidth="75.0" text="Date :" textFill="#272c39">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="780.0" layoutY="14.0" prefHeight="34.0" prefWidth="68.0" text="User :" textFill="#272c39">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUser" layoutX="847.0" layoutY="14.0" prefHeight="34.0" prefWidth="189.0" text="User :" textFill="#272c39">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="place" layoutX="202.0" layoutY="74.0" prefHeight="620.0" prefWidth="1206.0" />
+      <AnchorPane fx:id="context_2" layoutX="204.0" layoutY="74.0" prefHeight="637.0" prefWidth="1206.0">
+         <children>
+            <Label layoutX="7.0" layoutY="-60.0" prefHeight="34.0" prefWidth="75.0" text="Time :" textFill="#272c39">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Pane layoutX="994.0" layoutY="70.0" prefHeight="117.0" prefWidth="129.0" style="-fx-background-color: #FFE335; -fx-background-radius: 8px; -fx-border-color: #FFE335; -fx-border-radius: 8px;">
+               <children>
+                  <Label layoutY="7.0" text="Total SpareParts" textFill="#314168">
+                     <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCountSp" alignment="CENTER" layoutX="5.0" layoutY="40.0" prefHeight="72.0" prefWidth="120.0" text="00" textFill="#314168">
+                     <font>
+                        <Font name="Calibri Bold" size="57.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="36.0" layoutY="70.0" prefHeight="117.0" prefWidth="129.0" style="-fx-background-color: #FFE335; -fx-background-radius: 8px; -fx-border-color: #FFE335; -fx-border-radius: 8px;">
+               <children>
+                  <Label layoutX="13.0" layoutY="7.0" text="Total Services" textFill="#314168">
+                     <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCountService" alignment="CENTER" layoutX="5.0" layoutY="40.0" prefHeight="72.0" prefWidth="120.0" text="00" textFill="#314168">
+                     <font>
+                        <Font name="Calibri Bold" size="57.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <HBox layoutX="214.0" layoutY="72.0" prefHeight="117.0" prefWidth="787.0" spacing="30.0">
+               <children>
+                  <Pane prefHeight="116.0" prefWidth="219.0" style="-fx-background-color: #242936; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                     <children>
+                        <Label layoutX="21.0" layoutY="20.0" text="Repaires" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="175.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../asset/icon/icons8-support-100.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblRepairs" alignment="TOP_RIGHT" layoutX="13.0" layoutY="59.0" prefHeight="39.0" prefWidth="97.0" text="100/" textFill="#ffe144">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="113.0" layoutY="68.0" prefHeight="30.0" prefWidth="60.0" text="by Today" textFill="#ffe144">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="219.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="20.0" text="Orders" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="175.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../asset/icon/icons8-car-battery-100.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblOrders" alignment="TOP_RIGHT" layoutX="13.0" layoutY="59.0" prefHeight="39.0" prefWidth="97.0" text="100/" textFill="#ffe144">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="113.0" layoutY="68.0" prefHeight="30.0" prefWidth="64.0" text="by Today" textFill="#ffe144">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="colored-card" />
+                        <String fx:value="colored-card_ho" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <stylesheets>
+                        <URL value="@../../asset/css/Style.css" />
+                        <URL value="@../../asset/css/Dash.css" />
+                     </stylesheets>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="219.0" styleClass="pane_6" stylesheets="@../../asset/css/Pane.css">
+                     <children>
+                        <Label layoutX="21.0" layoutY="20.0" text="Users" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="175.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../asset/icon/icons8-contact-details-100.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblUsers" alignment="TOP_RIGHT" layoutX="13.0" layoutY="59.0" prefHeight="39.0" prefWidth="97.0" text="100/" textFill="#ffe144">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="113.0" layoutY="68.0" prefHeight="30.0" prefWidth="60.0" text="by Today" textFill="#ffe144">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Pane>
+               </children>
+            </HBox>
+            <Pane layoutX="36.0" layoutY="232.0" prefHeight="203.0" prefWidth="315.0" styleClass="pane_4" stylesheets="@../../asset/css/Pane.css">
+               <children>
+                  <Label layoutX="13.0" layoutY="4.0" text="INCOME">
+                     <font>
+                        <Font name="Calibri Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblOrderToday" alignment="TOP_RIGHT" layoutX="14.0" layoutY="150.0" prefHeight="39.0" prefWidth="129.0" text="00.0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="251.0" layoutY="1.0" prefHeight="30.0" prefWidth="46.0" text="Today">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRepairToday" alignment="TOP_RIGHT" layoutX="176.0" layoutY="150.0" prefHeight="39.0" prefWidth="129.0" text="00.0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutY="121.0" prefHeight="4.0" prefWidth="315.0" />
+                  <Label layoutX="13.0" layoutY="128.0" text="Orders">
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="184.0" layoutY="128.0" text="Repairs">
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTodayTotal" alignment="CENTER" layoutX="48.0" layoutY="44.0" prefHeight="72.0" prefWidth="241.0" text="100000000" textFill="#314168">
+                     <font>
+                        <Font name="Calibri Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCount21" alignment="CENTER" layoutX="10.0" layoutY="44.0" prefHeight="72.0" prefWidth="48.0" text="Rs" textFill="#314168">
+                     <font>
+                        <Font name="Calibri Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="361.0" layoutY="-2.0" prefHeight="200.0" prefWidth="375.0" styleClass="pane_3" stylesheets="@../../asset/css/Pane.css">
+                     <children>
+                        <Label layoutX="71.0" layoutY="8.0" text="SpareParts Maneger">
+                           <font>
+                              <Font name="Calibri Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCount2111" alignment="CENTER" layoutX="43.0" layoutY="52.0" prefHeight="49.0" prefWidth="75.0" text="Empty" textFill="#407b7b">
+                           <font>
+                              <Font name="Calibri Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCount21111" alignment="CENTER" layoutX="208.0" layoutY="52.0" prefHeight="49.0" prefWidth="147.0" text="Less than 20" textFill="#407b7b">
+                           <font>
+                              <Font name="Calibri Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="183.0" layoutY="52.0" orientation="VERTICAL" prefHeight="146.0" prefWidth="7.0" />
+                        <Separator layoutX="-1.0" layoutY="51.0" prefHeight="4.0" prefWidth="375.0" />
+                        <Label fx:id="lblEmptySp" alignment="CENTER" layoutX="31.0" layoutY="116.0" prefHeight="49.0" prefWidth="97.0" text="00" textFill="#407b7b">
+                           <font>
+                              <Font name="Calibri Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblLess20Sp" alignment="CENTER" layoutX="226.0" layoutY="116.0" prefHeight="49.0" prefWidth="97.0" text="00" textFill="#407b7b">
+                           <font>
+                              <Font name="Calibri Bold" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="808.0" layoutY="227.0" prefHeight="203.0" prefWidth="315.0" styleClass="pane_2" stylesheets="@../../asset/css/Pane.css">
+               <children>
+                  <Label fx:id="lblYearTotal" alignment="CENTER" layoutX="55.0" layoutY="43.0" prefHeight="72.0" prefWidth="241.0" text="100000000" textFill="#407b7b">
+                     <font>
+                        <Font name="Calibri Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCount211" alignment="CENTER" layoutX="18.0" layoutY="43.0" prefHeight="72.0" prefWidth="48.0" text="Rs" textFill="#407b7b">
+                     <font>
+                        <Font name="Calibri Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="4.0" text="INCOME">
+                     <font>
+                        <Font name="Calibri Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblOrderYear" alignment="TOP_RIGHT" layoutX="14.0" layoutY="150.0" prefHeight="39.0" prefWidth="131.0" text="00.0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="237.0" layoutY="1.0" prefHeight="30.0" prefWidth="60.0" text="This Year">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRepairYear" alignment="TOP_RIGHT" layoutX="174.0" layoutY="150.0" prefHeight="39.0" prefWidth="131.0" text="00.0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutY="121.0" prefHeight="4.0" prefWidth="315.0" />
+                  <Label layoutX="13.0" layoutY="128.0" text="Orders">
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="184.0" layoutY="128.0" text="Repairs">
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <ImageView fitHeight="39.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asset/icon/icons8-dashboard-layout-96.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" text="Dashboard" textFill="#242936">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

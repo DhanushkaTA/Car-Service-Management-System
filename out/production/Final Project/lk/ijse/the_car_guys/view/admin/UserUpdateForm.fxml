@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="557.0" prefWidth="1161.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.admin.UserUpdateFormController">
+   <children>
+      <Pane layoutX="14.0" layoutY="86.0" prefHeight="199.0" prefWidth="1107.0" style="-fx-background-color: white; -fx-background-radius: 8px; -fx-border-color: #AAAAAA; -fx-border-radius: 8px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="42.0" layoutY="30.0" text="User Details">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="1.0" layoutY="39.0" prefHeight="3.0" prefWidth="38.0" />
+            <Separator layoutX="120.0" layoutY="39.0" prefHeight="3.0" prefWidth="986.0" />
+            <Label layoutX="42.0" layoutY="55.0" text="User ID">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="290.0" layoutY="55.0" text="Full Name">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="544.0" layoutY="55.0" text="Username">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="792.0" layoutY="55.0" text="Telephone Number">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="128.0" text="E-mail Address">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="290.0" layoutY="128.0" text="NIC Number">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNIC" layoutX="293.0" layoutY="153.0" prefHeight="18.0" prefWidth="216.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmail" layoutX="42.0" layoutY="153.0" prefHeight="18.0" prefWidth="216.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblID" layoutX="42.0" layoutY="81.0" prefHeight="18.0" prefWidth="216.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFullName" layoutX="290.0" layoutY="81.0" prefHeight="18.0" prefWidth="239.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUsername" layoutX="544.0" layoutY="74.0" prefHeight="18.0" prefWidth="239.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTelephone" layoutX="792.0" layoutY="81.0" prefHeight="18.0" prefWidth="239.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserID" editable="false" layoutX="38.0" layoutY="78.0" prefHeight="30.0" prefWidth="205.0" promptText="User ID" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtFullName" layoutX="289.0" layoutY="78.0" prefHeight="30.0" prefWidth="205.0" promptText="User Full Name" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtUsername" layoutX="544.0" layoutY="78.0" prefHeight="30.0" prefWidth="205.0" promptText="Username" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPhoneNumber" layoutX="792.0" layoutY="78.0" prefHeight="30.0" prefWidth="216.0" promptText="Telephone Number" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtEmail" layoutX="38.0" layoutY="147.0" prefHeight="30.0" prefWidth="205.0" promptText="E-mailAddress" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtNIC" layoutX="290.0" layoutY="147.0" onKeyReleased="#txtNICOnAction" prefHeight="30.0" prefWidth="205.0" promptText="NIC Number" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="btnEdit" buttonType="RAISED" layoutX="940.0" layoutY="4.0" onAction="#btnEditeOnAction" prefHeight="30.0" prefWidth="89.0" styleClass="button_save" stylesheets="@../../asset/css/Button.css" text="Edite">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="EDIT" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="1002.0" layoutY="145.0" onAction="#btnCancelOnAction" prefHeight="30.0" prefWidth="89.0" styleClass="button_cancel" stylesheets="@../../asset/css/Button.css" text="Cancel">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="EDIT" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="896.0" layoutY="145.0" onAction="#btnSaveOnAction" prefHeight="30.0" prefWidth="89.0" styleClass="button_save" stylesheets="@../../asset/css/Button.css" text="Update">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="EDIT" />
+               </graphic>
+            </JFXButton>
+            <ComboBox fx:id="cmbRole" layoutX="545.0" layoutY="147.0" prefHeight="30.0" prefWidth="150.0" />
+            <Label layoutX="544.0" layoutY="125.0" text="User Role">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="txtSearch" layoutX="340.0" layoutY="33.0" onAction="#txtSearchOnAction" prefHeight="33.0" prefWidth="517.0" promptText="Enter Keyworde....." style="-fx-background-color: #FFFF9D; -fx-border-color: #FCB414;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cmbUserIds" layoutX="868.0" layoutY="34.0" onAction="#cmbUserIdsOnAction" prefHeight="30.0" prefWidth="150.0" stylesheets="@../../asset/css/Combo.css" />
+      <Pane layoutX="15.0" layoutY="311.0" prefHeight="200.0" prefWidth="1107.0" style="-fx-background-color: white; -fx-border-color: #AAAAAA; -fx-background-radius: 8px; -fx-border-radius: 8px;">
+         <children>
+            <Label layoutX="25.0" layoutY="58.0" text="Old Password">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtOldPwVisible" editable="false" layoutX="24.0" layoutY="85.0" onKeyReleased="#txtOldPwVisibleOnAction" prefHeight="30.0" prefWidth="205.0" promptText="Old Password" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtOldPassword" disable="true" layoutX="24.0" layoutY="85.0" onKeyReleased="#txtOldPasswordOnAction" prefHeight="30.0" prefWidth="205.0" promptText="Old Password" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="327.0" layoutY="57.0" text="New Password">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNewPwVisible" disable="true" layoutX="326.0" layoutY="84.0" onKeyReleased="#txtNewPwVisibleOnAction" prefHeight="30.0" prefWidth="205.0" promptText="New Password" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtNewPw" disable="true" layoutX="326.0" layoutY="84.0" onKeyReleased="#txtNewPwOnAction" prefHeight="30.0" prefWidth="205.0" promptText="New Password" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css" visible="false">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="630.0" layoutY="57.0" text="New Password Again">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtNewPwAgain" disable="true" layoutX="629.0" layoutY="84.0" onKeyReleased="#txtNewPwAgainOnAction" prefHeight="30.0" prefWidth="205.0" promptText="New Password" styleClass="Text-Field" stylesheets="@../../asset/css/CorrectText.css">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </PasswordField>
+            <JFXButton fx:id="btnVisible" layoutX="495.0" layoutY="115.0" onAction="#btnVisibleOnAction" text=" ">
+               <graphic>
+                  <FontAwesomeIconView fill="#272c39" glyphName="EYE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnUnVisible" layoutX="495.0" layoutY="115.0" onAction="#btnUnVisibleOnAction" text=" ">
+               <graphic>
+                  <FontAwesomeIconView fill="#272c39" glyphName="EYE_SLASH">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnChangePw" buttonType="RAISED" disable="true" layoutX="903.0" layoutY="123.0" onAction="#btnChangePwOnAction" prefHeight="30.0" prefWidth="150.0" styleClass="button_pass" stylesheets="@../../asset/css/Button.css" text="Change Password">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="EDIT" styleClass="button_pass" />
+               </graphic>
+            </JFXButton>
+            <JFXRadioButton fx:id="rBtnChangePw" layoutX="951.0" layoutY="4.0" onAction="#rBtnChangePwOnAction" text="Change Password" />
+         </children>
+      </Pane>
+      <Label layoutX="56.0" layoutY="326.0" text="Change Password">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="15.0" layoutY="335.0" prefHeight="3.0" prefWidth="38.0" />
+      <Separator layoutX="167.0" layoutY="335.0" prefHeight="3.0" prefWidth="953.0" />
+      <ComboBox fx:id="cmbSearchFrom" layoutX="173.0" layoutY="34.0" prefHeight="30.0" prefWidth="150.0" />
+      <Label layoutX="74.0" layoutY="41.0" prefHeight="18.0" prefWidth="89.0" text="Search From">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

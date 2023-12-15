@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="557.0" prefWidth="1161.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.admin.UserAllFormController">
+   <children>
+      <TextField fx:id="txtSearch" layoutX="330.0" layoutY="29.0" prefHeight="33.0" prefWidth="517.0" promptText="Enter Keyworde....." style="-fx-background-color: #FFFF9D; -fx-border-color: #FCB414;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="206.0" layoutY="37.0" text="Search : ">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblUser" layoutX="9.0" layoutY="87.0" prefHeight="418.0" prefWidth="1141.0" stylesheets="@../../asset/css/Table.css">
+         <columns>
+            <TableColumn fx:id="colUserID" prefWidth="102.0" text="User ID" />
+            <TableColumn fx:id="colFullName" prefWidth="182.0" text="User FullName" />
+            <TableColumn fx:id="colUsername" prefWidth="158.0" text="Username" />
+            <TableColumn fx:id="colTelephoneNumber" prefWidth="139.0" text="Tel.Number" />
+            <TableColumn fx:id="colEmail" prefWidth="194.0" text="E-mail" />
+            <TableColumn fx:id="colNIC" prefWidth="138.0" text="NIC" />
+            <TableColumn fx:id="colRole" prefWidth="127.0" text="Role" />
+            <TableColumn fx:id="colAction" prefWidth="100.0" text="Action" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

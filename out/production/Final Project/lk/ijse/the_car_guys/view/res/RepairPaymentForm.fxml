@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="context" prefHeight="531.0" prefWidth="1123.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.the_car_guys.controller.res.RepairPaymentFormController">
+   <children>
+      <TextField fx:id="txtSearch" layoutX="158.0" layoutY="17.0" prefHeight="33.0" prefWidth="841.0" promptText="Enter Keyworde....." style="-fx-background-color: #FFFF9D; -fx-border-color: #FCB414;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="491.0" layoutY="52.0" text="Enter here what you wanto find." textFill="#272c39" />
+      <TableView fx:id="tblPayment" layoutX="23.0" layoutY="74.0" prefHeight="311.0" prefWidth="1096.0" stylesheets="@../../asset/css/Table.css">
+         <columns>
+            <TableColumn fx:id="colPaymentID" prefWidth="171.0" text="Payment ID" />
+            <TableColumn fx:id="colPaymentType" prefWidth="97.0" text="Payment Type" />
+            <TableColumn fx:id="colRepairID" prefWidth="177.0" text="Repair ID" />
+            <TableColumn fx:id="colCustomerId" prefWidth="177.0" text="Customer Id" />
+            <TableColumn fx:id="colPaymentDate" prefWidth="145.0" text="Payment Date" />
+            <TableColumn fx:id="colPaymentTime" prefWidth="170.0" text="Payment Time" />
+            <TableColumn fx:id="colPayment" prefWidth="192.0" text="Payment" />
+         </columns>
+      </TableView>
+      <Pane layoutX="74.0" layoutY="392.0" prefHeight="137.0" prefWidth="1008.0" style="-fx-background-color: white; -fx-background-radius: 8px; -fx-border-color: #AAAAAA; -fx-border-radius: 8px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="42.0" layoutY="4.0" text="Client Details">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="1.0" layoutY="13.0" prefHeight="3.0" prefWidth="38.0" />
+            <Separator layoutX="126.0" layoutY="13.0" prefHeight="3.0" prefWidth="881.0" />
+            <Label layoutX="42.0" layoutY="30.0" text="ID">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="250.0" layoutY="30.0" text="Full Name">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="504.0" layoutY="30.0" text="NIC Number">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="752.0" layoutY="30.0" text="Telephone Number">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="83.0" text="E-mail Address">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="504.0" layoutY="83.0" text=" Address">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAddress" layoutX="507.0" layoutY="104.0" prefHeight="18.0" prefWidth="491.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmail" layoutX="42.0" layoutY="104.0" prefHeight="18.0" prefWidth="430.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblID" layoutX="42.0" layoutY="47.0" prefHeight="18.0" prefWidth="186.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFullName" layoutX="250.0" layoutY="47.0" prefHeight="18.0" prefWidth="239.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNIC" layoutX="504.0" layoutY="47.0" prefHeight="18.0" prefWidth="239.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTelephone" layoutX="752.0" layoutY="47.0" prefHeight="18.0" prefWidth="239.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <FontAwesomeIconView fill="#272c39" glyphName="INFO_CIRCLE" layoutX="478.0" layoutY="65.0" />
+   </children>
+</AnchorPane>
